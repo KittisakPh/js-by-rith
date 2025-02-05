@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function</title>
+</head>
+<body>
+  <script>
+    const calGrade = (score) => {
+      if (score > 100 || score < 0) {
+        return 'incorrect score'
+      }
+      if (score >= 80) {
+        return 'A'
+      }
+      if (score >= 70) {
+        return 'B'
+      }
+      if (score >= 60) {
+        return 'C'
+      }
+      if (score >= 50) {
+        return 'D'
+      }
+      return 'F'
+    }
+    const student = calGrade(150);
+    console.log(student);
+    const studentA = calGrade(81);
+    console.log(studentA);
+    const studentB = calGrade(71);
+    console.log(studentB);
+    const studentC = calGrade(61);
+    console.log(studentC);
+    const studentD = calGrade(51);
+    console.log(studentD);
+    const studentF = calGrade(49);
+    console.log(studentF);
+    // const f1 = printHello();
+    // function printHello(name){
+    //   let suffix = '';
+    //   if (name !== undefined){
+    //     suffix = name
+    //   }
+    //   return `hello ${suffix}`
+    // }
+    // const f2 = printHello('test');
+    // const printHelloName = (name) => {
+    //   let suffix = '';
+    //   if (name !== undefined){
+    //     suffix = name
+    //   }
+    //     return `Hello ${suffix}`
+    // }
+    // const arrow1 =  printHelloName('Kittisak');
+    // const arrow2 =  printHelloName();
+    // console.log(f1,f2,arrow1,arrow2)
+  </script>
+</body>
+</html>
