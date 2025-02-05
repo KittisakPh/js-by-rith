@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loop</title>
+</head>
+<body>
+  <script>
+    // for
+    const arr = ['0', '1', '2', '3', '4', '5'];
+    for(let i = 0; i < arr.length; i++){
+      if(i%2 === 0){
+        console.log(arr[i]);
+      }
+    }
+    // for const item of ..
+    for(const value of arr){
+      console.log(value);
+    }
+    // callback -> foreach(element, index)
+    const print = (e,i) => {
+      if (i%2 !== 0) return;
+      console.log(e)
+    }
+    arr.forEach(print)
+    // while
+    let i = 0
+    while(i < arr.length){
+      console.log(arr[i]);
+      i++;
+    }
+  </script>
+</body>
+</html>
