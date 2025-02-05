@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Condition</title>
+</head>
+<body>
+  <script>
+    let grade = ''
+    const score = 75;
+    if (score > 100 || score < 0) {
+      console.log('incorrect score');
+    } else if (score >= 80) {
+      grade = 'A'
+    } else if (score >= 70) {
+      grade = 'B'
+    } else if (score >= 60) {
+      grade = 'C'
+    } else if (score >= 50) {
+      grade = 'D'
+    } else {
+      grade = 'F'
+    }
+    // console.log('Grade: ' + grade) 
+    console.log(`Grade: ${grade}`)
+  </script>
+</body>
+</html>
