@@ -2,48 +2,56 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  color: white;
-  margin: 0;
-  padding: 0;
+html, body{
   width: 100vw;
   height: 100vh;
+  margin: 0;
+  padding: 0;
   background-color: black;
 }
 
-#kanbanBoard {
+#kanbanBoard{
   display: flex;
-  column-gap: 24px;
-  padding: 48px;
-  width: 100%;
   height: 100%;
+  width: 100%;
+  padding: 48px;
+  gap: 10px
 }
 
 .swimlane {
   border: 1px solid white;
-  /* กำหนดขนาดเริ่มต้นที่ 1 ส่วน */
   flex-basis: 1px;
-  /* ไม่ย่อขนาดเมื่อพื้นที่ไม่พอ */
   flex-shrink: 0;
-  /* ขยายตัวเมื่อมีพื้นที่เหลือ */
   flex-grow: 1;
 }
 
-.card {
+.title, .card{
+  text-decoration: overline underline;
   padding: 16px;
   border-radius: 4px;
-  .toDo & {
-    background-color: blue;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  .toDo &{
+    background-color: red;
   }
-  .inProgress & {
-    background-color: deeppink;
+
+  .inProgress &{
+    background-color: green;
   }
+
   .done &{
-    background-color: chocolate;
+    background-color: blue;
   }
 }
 
+.card{
+  text-decoration: none;
+  margin-top: 10px;
+  color: #000;
+}
+
 #dragged{
-  background: red;
+  background-color: yellow;
 }
